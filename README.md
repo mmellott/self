@@ -12,3 +12,9 @@ Theory of Computation_ (3rd edition).
 2. Can't just read source code
 3. Output must diff perfectly with source
 
+## Example
+
+Try this:
+
+    diff -s self.rb <(./self.rb)
+
