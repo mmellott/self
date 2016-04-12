@@ -1,16 +1,22 @@
 #!/usr/bin/ruby
 
-@tape = 'puts "#!/usr/bin/ruby"
+tape = <<EOT
+puts '#!/usr/bin/ruby'
 puts
-puts "@tape = " + 39.chr + @tape + 39.chr
+puts 'tape = <<EOT'
+puts tape
+puts 'EOT'
 puts
-puts @tape
+puts tape
+puts
+EOT
 
-'
-
-puts "#!/usr/bin/ruby"
+puts '#!/usr/bin/ruby'
 puts
-puts "@tape = " + 39.chr + @tape + 39.chr
+puts 'tape = <<EOT'
+puts tape
+puts 'EOT'
 puts
-puts @tape
+puts tape
+puts
 
